@@ -1,0 +1,15 @@
+.home-page {
+  width: 100%;
+  overflow-x: hidden;
+  background: #000;
+}
+
+/* Cinematic spacing between sections */
+.home-page section {
+  position: relative;
+}
+
+/* Smooth anchor scroll offset (important for fixed navbar) */
+.home-page section {
+  scroll-margin-top: 90px;
+}

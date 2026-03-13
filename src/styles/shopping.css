@@ -1,0 +1,249 @@
+/* ============================= */
+/* SHOPPING SECTION — LUXURY */
+/* ============================= */
+
+.shopping-section {
+  background: #000;
+  color: white;
+  padding: 130px 6vw;
+}
+
+.shopping-container {
+  max-width: 1500px;
+  margin: auto;
+}
+
+/* ============================= */
+/* HEADER */
+/* ============================= */
+
+.shopping-header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/* GOLD ICON GLOW */
+
+.shopping-header svg {
+  color: #d4af37;
+  margin-bottom: 18px;
+  filter: drop-shadow(0 0 8px rgba(212,175,55,.5));
+}
+
+/* FLOWING GOLD GRADIENT TITLE */
+
+.shopping-header h2 {
+  font-size: clamp(3rem,6vw,6rem);
+  font-weight: 800;
+  margin-bottom: 14px;
+
+  background: linear-gradient(
+    90deg,
+    #ffffff 0%,
+    #d4af37 30%,
+    #fff4c2 50%,
+    #d4af37 70%,
+    #ffffff 100%
+  );
+
+  background-size: 250% auto;
+  animation: goldFlow 5s linear infinite;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.shopping-header p {
+  color: rgba(255,255,255,.75);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: auto;
+}
+
+/* ============================= */
+/* ASYMMETRICAL LUXURY LAYOUT */
+/* ============================= */
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 24px;
+}
+
+/* FEATURED CARD (ZARA BIG) */
+
+.brand-card:nth-child(1) {
+  grid-column: span 6;
+  height: 580px;
+}
+
+/* SECOND GROUP */
+
+.brand-card:nth-child(2),
+.brand-card:nth-child(3) {
+  grid-column: span 3;
+  height: 580px;
+}
+
+/* THIRD GROUP */
+
+.brand-card:nth-child(4),
+.brand-card:nth-child(5),
+.brand-card:nth-child(6) {
+  grid-column: span 4;
+  height: 430px;
+}
+
+/* ============================= */
+/* CARD STYLE */
+/* ============================= */
+
+.brand-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: #111;
+  cursor: pointer;
+  transition: transform .5s ease;
+}
+
+.brand-card:hover {
+  transform: translateY(-10px) scale(1.02);
+}
+
+/* IMAGE */
+
+.brand-image {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.brand-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1);
+  transition: transform 1.2s ease;
+}
+
+/* CINEMATIC ZOOM */
+
+.brand-card:hover img {
+  transform: scale(1.15);
+}
+
+.brand-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.95),
+    rgba(0,0,0,.45),
+    transparent
+  );
+}
+
+/* CONTENT */
+
+.brand-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 26px;
+}
+
+.brand-content h3 {
+  font-size: 2rem;
+  margin-bottom: 6px;
+}
+
+.brand-content .category {
+  color: #d4af37;
+  font-size: .85rem;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.brand-content p {
+  color: rgba(255,255,255,.8);
+  font-size: .95rem;
+  margin-bottom: 14px;
+}
+
+/* EXPLORE */
+
+.explore {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #d4af37;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: .35s ease;
+}
+
+.brand-card:hover .explore {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ============================= */
+/* GOLD FLOW ANIMATION */
+/* ============================= */
+
+@keyframes goldFlow {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+/* ============================= */
+/* MOBILE RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-card {
+    grid-column: auto !important;
+    height: 360px !important;
+  }
+
+  .shopping-section {
+    padding: 90px 20px;
+  }
+
+  .brand-content h3 {
+    font-size: 1.6rem;
+  }
+}
+/* FIX: Show brand card text again */
+
+.brand-content{
+opacity:1 !important;
+visibility:visible !important;
+display:block !important;
+transform:none !important;
+z-index:2;
+}
+
+/* Ensure overlay does not cover text */
+
+.brand-overlay{
+z-index:1 !important;
+}
+
+.brand-image{
+position:relative;
+}
+
+.brand-content{
+position:absolute;
+bottom:20px;
+left:20px;
+right:20px;
+color:white;
+}

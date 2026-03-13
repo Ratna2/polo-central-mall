@@ -1,0 +1,407 @@
+// Polo Central Mall - Mock Data
+// React + Vite version using LOCAL IMAGES
+
+// ======================================================
+// IMAGE IMPORTS
+// ======================================================
+
+// ======================================================
+// BRAND LOGOS
+// ======================================================
+
+import pantaloonsLogo from "../assets/logos/pantaloons.png";
+import boddessLogo from "../assets/logos/boddess.png";
+import forestLogo from "../assets/logos/forest.png";
+import nykaaLogo from "../assets/logos/nykaa.png";
+import mamaearthLogo from "../assets/logos/mamaearth.png";
+import shoppersstopLogo from "../assets/logos/shoppersstop.png";
+import liquidLogo from "../assets/logos/liquid.png";
+
+// ======================================================
+// BRAND HEADER VIDEOS
+// ======================================================
+
+import pantaloonsVideo from "../assets/videos/pantaloons.mp4";
+import boddessVideo from "../assets/videos/boddess.mp4";
+import forestVideo from "../assets/videos/forest.mp4";
+import nykaaVideo from "../assets/videos/nykaa.mp4";
+import mamaearthVideo from "../assets/videos/mamaearth.mp4";
+import shoppersstopVideo from "../assets/videos/shoppersstop.mp4";
+import liquidVideo from "../assets/videos/liquid.mp4";
+
+
+// HERO
+import hero1 from "../assets/images/hero/hero1.webp";
+import hero2 from "../assets/images/hero/hero2.webp";
+import hero3 from "../assets/images/hero/hero3.webp";
+
+// BRANDS
+import pantaloons from "../assets/images/brands/pantaloons.webp";
+import boddess from "../assets/images/brands/boddess.webp";
+import shoppersStop from "../assets/images/brands/shoppers-stop.webp";
+import mamaearth from "../assets/images/brands/mamaearth.webp";
+import nykaa from "../assets/images/brands/nykaa.webp";
+import forestEssentials from "../assets/images/brands/forest-essentials.webp";
+import liquidPerfume from "../assets/images/brands/liquid-perfume.webp";
+
+// ENTERTAINMENT
+import cinemaImg from "../assets/images/entertainment/cinema.webp";
+import timezoneImg from "../assets/images/entertainment/timezone.webp";
+import kidsImg from "../assets/images/entertainment/kids.webp";
+
+// DINING
+import radhakrishnaImg from "../assets/images/dining/radha-krishna.webp";
+import yellowCab from "../assets/images/dining/yellowcab.webp";
+import crosswordImg from "../assets/images/dining/crossword.webp";
+import { Video } from "lucide-react";
+
+// ======================================================
+// BASIC MALL INFO
+// ======================================================
+
+export const mallInfo = {
+  name: "Polo Central Mall",
+  tagline: "Where Lifestyle Meets Luxury",
+  location: "Tripura, India",
+  parent: "Polo Towers",
+  description:
+    "Polo Central Mall is a premium lifestyle shopping destination under Polo Towers, located in Tripura, offering shopping, dining, cinema, entertainment, and family experiences.",
+};
+
+
+// ======================================================
+// HERO SLIDER IMAGES
+// ======================================================
+
+export const heroImages = [
+  { url: hero1, title: "Premium Shopping Experience", alt: "Luxury mall interior" },
+  { url: hero2, title: "World-Class Architecture", alt: "Luxury mall architecture" },
+  { url: hero3, title: "Sophisticated Ambiance", alt: "Mall escalator view" },
+];
+
+
+// ======================================================
+// FASHION & BEAUTY BRANDS
+// ======================================================
+
+export const fashionBrands = [
+  {
+    name: "Pantaloons",
+    slug: "pantaloons",
+    category: "Fashion | Ground Floor",
+    description: "Contemporary fashion for modern individuals.",
+    image: pantaloons,
+  },
+  {
+    name: "Boddess Beauty",
+    slug: "boddess",
+    category: "Beauty | Ground Floor",
+    description: "Premium beauty products and cosmetics.",
+    image: boddess,
+  },
+  {
+    name: "Forest Essentials",
+    slug: "forest",
+    category: "Luxury Skincare | Ground Floor",
+    description: "Authentic Ayurvedic beauty and wellness products.",
+    image: forestEssentials,
+  },
+  {
+    name: "Nykaa",
+    slug: "nykaa",
+    category: "Beauty | Ground Floor",
+    description: "Premium cosmetics and beauty products.",
+    image: nykaa,
+  },
+  {
+    name: "Mamaearth",
+    slug: "mamaearth",
+    category: "Beauty & Skincare",
+    description: "Natural and toxin-free skincare products.",
+    image: mamaearth,
+  },
+  {
+    name: "Shoppers Stop",
+    slug: "shoppersstop",
+    category: "Department Store",
+    description: "Premium fashion and lifestyle brands.",
+    image: shoppersStop,
+  },
+  {
+    name: "Liquid Perfume",
+    slug: "liquid",
+    category: "Fragrance",
+    description: "Exclusive fragrance collections.",
+    image: liquidPerfume,
+  },
+];
+
+
+// ======================================================
+// FLOOR INFORMATION
+// ======================================================
+
+export const floorInfo = [
+  {
+    floor: "Ground Floor",
+    title: "Beauty & Lifestyle",
+    description: "Premium beauty, fragrance and fashion brands.",
+    features: [
+      "Boddess Beauty",
+      "Forest Essentials",
+      "Nykaa",
+      "Pantaloons",
+      "Mamaearth",
+      "Yellow Cab",
+      "Liquid Perfume",
+      "The Man Company",
+      "Shoppers Stop"
+    ]
+  },
+  {
+    floor: "First Floor",
+    title: "Jewellery & Fashion",
+    description: "Luxury jewellery and fashion collections.",
+    features: ["Radha Krishna Jewellery", "Shoppers Stop"]
+  },
+  {
+    floor: "Second Floor",
+    title: "Fashion",
+    description: "Upper level of Shoppers Stop.",
+    features: ["Shoppers Stop"]
+  },
+  {
+    floor: "Third Floor",
+    title: "Entertainment",
+    description: "Gaming and entertainment experiences.",
+    features: ["Time Zone", "Haunted House", "Crossword"]
+  },
+  {
+    floor: "Fourth Floor",
+    title: "Food Court",
+    description: "Multi-cuisine food brands.",
+    features: ["KFC", "Domino's", "Pizza Hut", "Subway"]
+  }
+];
+
+
+// ======================================================
+// ENTERTAINMENT
+// ======================================================
+
+export const entertainment = {
+
+  cinema: {
+    title: "INOX Cinema (Coming Soon)",
+    description: "A premium multiplex cinema is coming soon to Polo Central Mall.",
+    features: ["Luxury Screens", "Dolby Atmos", "Premium Seating"],
+    image: cinemaImg,
+    status: "coming-soon"
+  },
+
+  timeZone: {
+    title: "Time Zone",
+    description: "Ultimate gaming and arcade experience.",
+    features: ["Arcade Games", "VR", "Racing Games"],
+    image: timezoneImg,
+  },
+
+  kids: {
+    title: "Kids Entertainment",
+    description: "Play zones and activities for children.",
+    image: kidsImg,
+  },
+};
+
+
+// ======================================================
+// DINING
+// ======================================================
+
+export const dining = {
+  crossword: {
+    title: "Crossword",
+    description: "Discover a world of books, stationery and thoughtful gifts. Crossword brings readers and creators together.",
+    image: crosswordImg,
+    features: [
+      "Bestselling Books",
+      "premium Stationery",
+      "Gifts & Collectables"
+    ],
+  },
+
+  yellowCab: {
+    title: "Yellow Cab Cafe ",
+    description: "A cozy cafe experience to relax, recharge and enjoy great coffee.",
+    image: yellowCab,
+    features: [
+      "Fresh Coffee",
+      "Quick Bites",
+      "Relaxed Cafe Ambience"
+    ],
+  },
+
+  radhakrishna: {
+    title: "Radha Krishna Jewellery",
+    description: "Explore eligent jewellery collections crafted with timeless beauty and traditional artistry.",
+    image: radhakrishnaImg,
+    features: [
+      "Gold & Diamond Jewellery",
+      "Traditional Designs",
+      "Premium Craftsmanship"
+    ],
+  },
+};
+
+
+// ======================================================
+// ABOUT PAGE
+// ======================================================
+
+export const aboutContent = {
+  story:
+    "Polo Central Mall stands as a beacon of luxury and lifestyle in Tripura, redefining the shopping experience under the prestigious Polo Towers banner.",
+  vision:
+    "To be the premier lifestyle destination in Northeast India, bringing global brands and experiences to our community.",
+  highlights: [
+    "State-of-the-art IMAX cinema",
+    "100+ premium brands",
+    "Multi-cuisine food court",
+    "Time Zone entertainment",
+    "Luxury lounge and bar",
+    "Family-friendly environment",
+  ],
+};
+
+
+// ======================================================
+// BRAND MEDIA GALLERIES (UPGRADED FOR 50+ MEDIA FILES)
+// ======================================================
+
+export const brandMedia = {
+  pantaloons: {
+    slug: "pantaloons",
+    name: "Pantaloons",
+    logo: pantaloonsLogo,
+    video: pantaloonsVideo,
+    description: "Pantaloons fashion collections and in-store experience.",
+    media: [
+      { type: "image", src: "/brands/pantaloons/images/1.webp" },
+      { type: "image", src: "/brands/pantaloons/images/2.webp" },
+      { type: "image", src: "/brands/pantaloons/images/3.webp" },
+      { type: "image", src: "/brands/pantaloons/images/4.webp" },
+      { type: "image", src: "/brands/pantaloons/images/5.webp" },
+      { type: "image", src: "/brands/pantaloons/images/6.webp" },
+      { type: "image", src: "/brands/pantaloons/images/7.webp" },
+      { type: "image", src: "/brands/pantaloons/images/8.webp" }
+    ]
+  },
+
+  boddess: {
+    slug: "boddess",
+    name: "Boddess Beauty",
+    logo: boddessLogo,
+    video: boddessVideo,
+    description: "Luxury beauty and cosmetics collections.",
+    media: [
+      { type: "image", src: "/brands/boddessbeauty/images/1.webp" },
+      { type: "image", src: "/brands/boddessbeauty/images/2.webp" },
+      { type: "image", src: "/brands/boddessbeauty/images/3.webp" },
+      { type: "image", src: "/brands/boddessbeauty/images/4.webp" },
+      { type: "image", src: "/brands/boddessbeauty/images/5.webp" },
+      { type: "image", src: "/brands/boddessbeauty/images/6.webp" },
+      { type: "image", src: "/brands/boddessbeauty/images/7.webp" },
+      { type: "image", src: "/brands/boddessbeauty/images/8.webp" }
+    ]
+  },
+
+  forest: {
+    slug: "forest",
+    name: "Forest Essentials",
+    logo: forestLogo,
+    video: forestVideo,
+    description: "Ayurvedic skincare and wellness products.",
+    media: [
+      { type: "image", src: "/brands/forestessentials/images/1.webp" },
+      { type: "image", src: "/brands/forestessentials/images/2.webp" },
+      { type: "image", src: "/brands/forestessentials/images/3.webp" },
+      { type: "image", src: "/brands/forestessentials/images/4.webp" },
+      { type: "image", src: "/brands/forestessentials/images/5.webp" },
+      { type: "image", src: "/brands/forestessentials/images/6.webp" },
+      { type: "image", src: "/brands/forestessentials/images/7.webp" },
+      { type: "image", src: "/brands/forestessentials/images/8.webp" }
+    ]
+  },
+
+  mamaearth: {
+    slug: "mamaearth",
+    name: "Mamaearth",
+    logo: mamaearthLogo,
+    video: mamaearthVideo,
+    description: "Natural toxin-free beauty products.",
+    media: [
+      { type: "image", src: "/brands/mamaearth/images/1.webp" },
+      { type: "image", src: "/brands/mamaearth/images/2.webp" },
+      { type: "image", src: "/brands/mamaearth/images/3.webp" },
+      { type: "image", src: "/brands/mamaearth/images/4.webp" },
+      { type: "image", src: "/brands/mamaearth/images/5.webp" },
+      { type: "image", src: "/brands/mamaearth/images/6.webp" },
+      { type: "image", src: "/brands/mamaearth/images/7.webp" },
+      { type: "image", src: "/brands/mamaearth/images/8.webp" }
+    ]
+  },
+
+  nykaa: {
+    slug: "nykaa",
+    name: "Nykaa",
+    logo: nykaaLogo,
+    video: nykaaVideo,
+    description: "Premium beauty and cosmetics store.",
+    media: [
+      { type: "image", src: "/brands/naykaa/images/1.webp" },
+      { type: "image", src: "/brands/naykaa/images/2.webp" },
+      { type: "image", src: "/brands/naykaa/images/3.webp" },
+      { type: "image", src: "/brands/naykaa/images/4.webp" },
+      { type: "image", src: "/brands/naykaa/images/5.webp" },
+      { type: "image", src: "/brands/naykaa/images/6.webp" },
+      { type: "image", src: "/brands/naykaa/images/7.webp" },
+      { type: "image", src: "/brands/naykaa/images/8.webp" }
+    ]
+  },
+
+  shoppersstop: {
+    slug: "shoppersstop",
+    name: "Shoppers Stop",
+    logo: shoppersstopLogo,
+    video: shoppersstopVideo,
+    description: "India's premium fashion department store.",
+    media: [
+      { type: "image", src: "/brands/shoppersstop/images/1.webp" },
+      { type: "image", src: "/brands/shoppersstop/images/2.webp" },
+      { type: "image", src: "/brands/shoppersstop/images/3.webp" },
+      { type: "image", src: "/brands/shoppersstop/images/4.webp" },
+      { type: "image", src: "/brands/shoppersstop/images/5.webp" },
+      { type: "image", src: "/brands/shoppersstop/images/6.webp" },
+      { type: "image", src: "/brands/shoppersstop/images/7.webp" },
+      { type: "image", src: "/brands/shoppersstop/images/8.webp" }
+    ]
+  },
+
+  liquid: {
+    slug: "liquid",
+    name: "Liquid Perfume",
+    logo: liquidLogo,
+    video: liquidVideo,
+    description: "India's premium perfume store.",
+    media: [
+      { type: "image", src: "/brands/liquidperfume/images/1.webp" },
+      { type: "image", src: "/brands/liquidperfume/images/2.webp" },
+      { type: "image", src: "/brands/liquidperfume/images/3.webp" },
+      { type: "image", src: "/brands/liquidperfume/images/4.webp" },
+      { type: "image", src: "/brands/liquidperfume/images/5.webp" },
+      { type: "image", src: "/brands/liquidperfume/images/6.webp" },
+      { type: "image", src: "/brands/liquidperfume/images/7.webp" },
+      { type: "image", src: "/brands/liquidperfume/images/8.webp" }
+    ]
+  }
+};

@@ -1,0 +1,352 @@
+/* ============================= */
+/* FOOD COURT SECTION */
+/* ============================= */
+
+.foodcourt-section {
+  position: relative;
+  background: linear-gradient(135deg, #0d0d0d, #171616, #151207);
+  color: white;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+/* BACKGROUND */
+
+.foodcourt-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.foodcourt-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+
+  transition: opacity 1.2s ease-in-out, transform 6s ease;
+  animation: foodcourtZoom 18s infinite alternate;
+}
+
+@keyframes foodcourtZoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+.foodcourt-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    #000,
+    rgba(0,0,0,.9),
+    #000
+  );
+}
+
+/* CONTAINER */
+
+.foodcourt-container {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* HEADER */
+
+.foodcourt-header {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.foodcourt-header svg {
+  color: #d4af37;
+  margin-bottom: 16px;
+}
+
+/* GOLD WAVE HEADING */
+
+.foodcourt-header h2 {
+  font-size: clamp(2.5rem,5vw,5rem);
+  margin-bottom: 12px;
+  font-weight: 700;
+
+  background: linear-gradient(
+    120deg,
+    #ffffff 0%,
+    #d4af37 25%,
+    #fff3c4 45%,
+    #d4af37 60%,
+    #ffffff 100%
+  );
+
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  animation: foodGoldWave 4.5s linear infinite;
+}
+
+@keyframes foodGoldWave {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.foodcourt-header p {
+  color: rgba(255,255,255,.75);
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #d4af37;
+  font-size: 1.1rem;
+}
+
+/* FEATURES */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 18px;
+  margin-bottom: 50px;
+}
+
+.feature-card {
+  background: rgba(20,20,20,.55);
+  border: 1px solid rgba(212,175,55,.25);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+}
+
+.feature-card svg {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* SHOWCASE */
+
+.showcase {
+  position: relative;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 3px solid rgba(212,175,55,.3);
+}
+
+.showcase img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+
+  transform: scale(1.08);
+  transition: transform 1.2s ease, opacity 1.2s ease;
+
+  animation: showcaseFade 1.2s ease;
+}
+
+@keyframes showcaseFade {
+  from { opacity: 0.3; }
+  to { opacity: 1; }
+}
+
+/* ONLY IMAGE ZOOM (no glow, no card lift) */
+
+.showcase:hover img {
+  transform: scale(1);
+}
+
+/* BOTTOM DARK OVERLAY */
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.95) 0%,
+    rgba(0,0,0,.75) 35%,
+    rgba(0,0,0,.45) 60%, 
+    transparent 100%
+  );
+  opacity: 0.9;
+}
+
+/* CTA */
+
+.foodcourt-cta {
+  text-align: center;
+  margin-top: 45px;
+}
+
+.foodcourt-cta p {
+  font-size: 1.2rem;
+  color: rgba(255,255,255,.85);
+  margin-bottom: 20px;
+}
+
+.foodcourt-cta button {
+  background: #d4af37;
+  color: black;
+  border: none;
+  padding: 14px 26px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.foodcourt-cta button:hover {
+  background: #c19a2e;
+}
+
+/* ================================================= */
+/* FOOD BRAND CARDS */
+/* ================================================= */
+
+.food-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 24px;
+  margin-top: 40px;
+}
+
+.food-brand-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 14px;
+  height: 320px;
+  cursor: pointer;
+  border: 1px solid rgba(212,175,55,.15);
+}
+
+/* IMAGE */
+
+.brand-image {
+  position: absolute;
+  inset: 0;
+}
+
+.brand-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1s ease;
+}
+
+/* ONLY IMAGE ZOOM */
+
+.food-brand-card:hover img {
+  transform: scale(1.12);
+}
+
+/* OVERLAY */
+
+.brand-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,.95),
+    rgba(0,0,0,.65),
+    transparent
+  );
+}
+
+/* CONTENT */
+
+.brand-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity .4s ease, transform .4s ease;
+}
+
+.food-brand-card:hover .brand-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.brand-icon {
+  color: #d4af37;
+  margin-bottom: 8px;
+}
+
+.brand-content h3 {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.brand-content p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(255,255,255,.85);
+}
+
+/* MOBILE SLIDER */
+
+@media (max-width: 992px) {
+
+  .features-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .showcase img {
+    height: 420px;
+  }
+
+  .food-brands-grid {
+    display: flex;
+    overflow-x: auto;
+    gap: 18px;
+    padding-bottom: 10px;
+    scroll-snap-type: x mandatory;
+  }
+
+  .food-brand-card {
+    min-width: 260px;
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+  }
+
+  .food-brands-grid::-webkit-scrollbar {
+    display: none;
+  }
+
+}
+
+@media (max-width: 600px) {
+
+  .foodcourt-section {
+    padding: 90px 20px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .showcase img {
+    height: 280px;
+  }
+
+  .foodcourt-header h2 {
+    font-size: 2.2rem;
+  }
+
+}

@@ -1,0 +1,75 @@
+/* BRAND HEADER */
+
+.brand-header{
+  background:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  padding:10px 0;   /* small vertical space */
+  margin-top:70px;  /* space below navbar */
+
+  position:relative;
+  height:55vh;        /* shortened header */
+  min-height:260px;
+
+  overflow:hidden;
+}
+
+/* LOGO */
+
+.brand-header img{
+  height:auto;      /* control logo size */
+  max-width:90%;
+  width:360px;
+  display:block;
+}
+
+/* BLACK MEDIA SECTION */
+
+.brand-media{
+  background:black;
+  padding:60px 6vw 120px 6vw;
+}
+
+/* HEADER VIDEO BACKGROUND */
+
+.brand-header-video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  z-index:1;
+
+  filter: blur(2px);
+  transform: scale(1.02);
+}
+
+/* DARK OVERLAY */
+
+.brand-header-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+  z-index:2;
+}
+
+/* LOGO ABOVE VIDEO */
+
+.brand-header-logo{
+  position:relative;
+  z-index:3;
+  max-width:260px;
+
+  opacity: 0.65;        /* transparent logo */
+  transition:opacity .3s ease;
+}
+
+.brand-header-overlay{
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.65);
+  z-index:2;
+}

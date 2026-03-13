@@ -1,0 +1,72 @@
+/* ====================================== */
+/* POLO CENTRAL MALL — GLOBAL BASE */
+/* ====================================== */
+
+/* PREMIUM FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLES */
+
+:root {
+  --gold-400: #d4af37;
+  --gold-500: #c19a2e;
+  --gold-600: #b08a28;
+
+  --charcoal-800: #1a1a1a;
+  --charcoal-900: #0d0d0d;
+}
+
+/* GLOBAL BODY */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* HEADINGS = LUXURY FEEL */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* LINKS */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* IMAGES */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* CODE TAG */
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

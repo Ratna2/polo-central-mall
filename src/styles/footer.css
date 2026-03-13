@@ -1,0 +1,171 @@
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+.footer{
+background:#000;
+color:white;
+padding:90px 6vw 30px;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+/* container */
+
+.footer-container{
+max-width:1400px;
+margin:auto;
+
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:40px;
+}
+
+/* columns */
+
+.footer-col h3{
+margin-bottom:16px;
+font-size:1.1rem;
+color:#d4af37;
+}
+
+.footer-col p{
+color:rgba(255,255,255,.7);
+line-height:1.6;
+}
+
+/* brand */
+
+.footer-col.brand h2{
+font-size:1.6rem;
+margin-bottom:10px;
+}
+
+/* footer items */
+
+.footer-item{
+display:flex;
+align-items:flex-start;
+gap:10px;
+margin-bottom:10px;
+font-size:.95rem;
+color:rgba(255,255,255,.8);
+}
+
+.footer-item svg{
+color:#d4af37;
+flex-shrink:0;
+}
+
+/* map */
+
+.footer-col.map iframe{
+width:100%;
+height:160px;
+border:none;
+border-radius:10px;
+}
+
+/* bottom */
+
+.footer-bottom{
+text-align:center;
+margin-top:40px;
+padding-top:20px;
+border-top:1px solid rgba(255,255,255,.08);
+font-size:.9rem;
+color:rgba(255,255,255,.6);
+}
+
+/* footer logo */
+
+.footer-logo img{
+  height:60px;
+  width:auto;
+  object-fit:contain;
+  margin-bottom:12px;
+}
+
+/* clickable contact */
+
+.footer-item a{
+  color:rgba(255,255,255,0.85);
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.footer-item a:hover{
+  color:#d4af37;
+}
+
+/* bigger logo */
+
+.footer-logo img{
+height:100px;
+width:auto;
+object-fit:contain;
+margin-bottom:10px;
+}
+
+/* convenience text */
+
+.convenience-text .main{
+font-weight:600;
+font-size:1rem;
+margin-bottom:3px;
+}
+
+.convenience-text .sub{
+font-size:.85rem;
+color:rgba(255,255,255,.6);
+}
+
+/* address spacing */
+
+.address{
+line-height:1.6;
+}
+
+/* phone spacing */
+
+.phone{
+letter-spacing:1px;
+font-weight:500;
+}
+
+/* golden border around map */
+
+.footer-col.map iframe{
+width:100%;
+height:160px;
+border-radius:10px;
+border:2px solid #d4af37;
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media(max-width:1000px){
+
+.footer-container{
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+}
+
+}
+
+@media(max-width:600px){
+
+.footer{
+padding:70px 20px 30px;
+}
+
+.footer-container{
+grid-template-columns:1fr;
+}
+
+.footer-col.map iframe{
+height:200px;
+}
+
+}
