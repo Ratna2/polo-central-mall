@@ -6,7 +6,7 @@ export default function DiningGallery({ images }) {
       {images.map((img, index) => (
         <img
           key={index}
-          src={img}
+          src={img.src}
           loading="lazy"
         />
       ))}

@@ -13,6 +13,8 @@ const mamaearthLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v177366
 const shoppersstopLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667839/shoppersstop_oor0dc.png";
 const liquidLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667831/liquid_dgjo1h.webp";
 const crosswordLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773682142/crossword_hltbzb.png";
+const yellowcabLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773905558/yellowcab_vgrtia.png";
+const radhakrishnaLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773905558/radhakirshna_jgcs44.png";
 
 // ======================================================
 // BRAND HEADER VIDEOS
@@ -249,25 +251,35 @@ export const dining = {
   },
 
   yellowCab: {
+    slug: "yellowcab",
     title: "Yellow Cab Cafe ",
+    logo: yellowcabLogo,
+    video: crosswordVideo,
     description: "A cozy cafe experience to relax, recharge and enjoy great coffee.",
+    floor: "Ground Floor",
     image: yellowCab,
     features: [
       "Fresh Coffee",
       "Quick Bites",
       "Relaxed Cafe Ambience"
     ],
+    gallery: []
   },
 
   radhakrishna: {
+    slug: "radhakrishna",
     title: "Radha Krishna Jewellery",
+    logo: radhakrishnaLogo,
+    video: crosswordVideo,
     description: "Explore eligent jewellery collections crafted with timeless beauty and traditional artistry.",
+    floor: "First Floor",
     image: radhakrishnaImg,
     features: [
       "Gold & Diamond Jewellery",
       "Traditional Designs",
       "Premium Craftsmanship"
     ],
+    gallery: []
   },
 };
 

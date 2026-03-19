@@ -9,7 +9,9 @@ import "../styles/diningBrandPage.css";
 export default function DiningBrandPage() {
 
   const { slug } = useParams();
-  const brand = dining[slug];
+  const brand = Object.values(dining).find(
+    (item) => item.slug === slug
+  );
 
   if (!brand) return <div>Brand not found</div>;
 
