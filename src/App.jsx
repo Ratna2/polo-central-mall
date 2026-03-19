@@ -7,6 +7,7 @@ import Footer from "./components/Footer";   // added footer import
 import Home from "./pages/Home";
 import About from "./pages/About";
 import BrandPage from "./pages/BrandPage";
+import DiningBrandPage from "./pages/DiningBrandPage";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -29,6 +30,9 @@ function App() {
 
           {/* Brand Pages */}
           <Route path="/brand/:brand" element={<BrandPage />} />
+
+          {/* Dining Pages */}
+          <Route path="/dining/:slug" element={<DiningBrandPage />} />
         </Routes>
 
         {/* Global Footer */}

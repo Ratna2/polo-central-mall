@@ -1,0 +1,256 @@
+/* ===================================== */
+/* DINING BRAND PAGE */
+/* ===================================== */
+
+.dining-brand-page{
+  background:#000;
+  color:white;
+  overflow:hidden;
+}
+
+
+/* ===================================== */
+/* ENTRY LOGO ANIMATION */
+/* ===================================== */
+
+.entry-animation{
+  position:fixed;
+  inset:0;
+  background:black;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  z-index:9999;
+  animation:entryFade 1.8s ease forwards;
+}
+
+.entry-animation img{
+  width:180px;
+  opacity:0;
+  animation:logoReveal 1.4s ease forwards;
+}
+
+@keyframes logoReveal{
+  0%{
+    transform:scale(.8);
+    opacity:0;
+  }
+  100%{
+    transform:scale(1);
+    opacity:1;
+  }
+}
+
+@keyframes entryFade{
+  0%{opacity:1;}
+  80%{opacity:1;}
+  100%{
+    opacity:0;
+    visibility:hidden;
+  }
+}
+
+
+/* ===================================== */
+/* HEADER SECTION */
+/* ===================================== */
+
+.dining-header{
+  position:relative;
+  height:70vh;
+  min-height:420px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+
+/* VIDEO */
+
+.dining-header video{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(.6) blur(1px);
+}
+
+/* DARK OVERLAY */
+
+.dining-header::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(0,0,0,.4),
+    rgba(0,0,0,.8)
+  );
+}
+
+/* HEADER CONTENT */
+
+.dining-header .overlay{
+  position:relative;
+  z-index:3;
+  text-align:center;
+}
+
+/* LOGO */
+
+.dining-header img{
+  width:360px;
+  margin-bottom:20px;
+  opacity:.7;
+  filter: brightness(1.1);
+}
+
+/* TITLE */
+
+.dining-header h1{
+  font-size:3rem;
+  font-weight:700;
+  letter-spacing:.5px;
+}
+
+
+/* ===================================== */
+/* CONTENT SECTION */
+/* ===================================== */
+
+.dining-content{
+  max-width:1100px;
+  margin:auto;
+  padding:90px 6vw;
+  text-align:center;
+}
+
+/* DESCRIPTION */
+
+.dining-content p{
+  font-size:1.15rem;
+  line-height:1.8;
+  color:rgba(255,255,255,.8);
+  margin-bottom:40px;
+}
+
+/* FEATURES */
+
+.dining-content ul{
+  list-style:none;
+  padding:0;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+  margin-bottom:60px;
+}
+
+.dining-content li{
+  background:rgba(20,20,20,.6);
+  padding:14px 18px;
+  border-radius:8px;
+  border:1px solid rgba(212,175,55,.2);
+  font-size:.95rem;
+}
+
+
+/* ===================================== */
+/* FLOOR INFO */
+/* ===================================== */
+
+.floor-info{
+  margin-top:30px;
+}
+
+.floor-info h3{
+  font-size:1.4rem;
+  margin-bottom:8px;
+  color:#d4af37;
+}
+
+.floor-info p{
+  font-size:1rem;
+  color:rgba(255,255,255,.85);
+}
+
+
+/* ===================================== */
+/* GALLERY */
+/* ===================================== */
+
+.dining-gallery{
+  max-width:1400px;
+  margin:auto;
+  padding:0 6vw 120px;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px;
+}
+
+/* IMAGE */
+
+.dining-gallery img{
+  width:100%;
+  height:260px;
+  object-fit:cover;
+  border-radius:10px;
+  transition:transform .6s ease;
+}
+
+/* HOVER ZOOM */
+
+.dining-gallery img:hover{
+  transform:scale(1.05);
+}
+
+
+/* ===================================== */
+/* RESPONSIVE */
+/* ===================================== */
+
+@media(max-width:1000px){
+
+  .dining-header h1{
+    font-size:2.3rem;
+  }
+
+  .dining-content ul{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .dining-gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+
+@media(max-width:600px){
+
+  .dining-header{
+    height:55vh;
+  }
+
+  .dining-header img{
+    width:150px;
+  }
+
+  .dining-header h1{
+    font-size:1.8rem;
+  }
+
+  .dining-content{
+    padding:70px 20px;
+  }
+
+  .dining-content ul{
+    grid-template-columns:1fr;
+  }
+
+  .dining-gallery{
+    grid-template-columns:1fr;
+  }
+
+}

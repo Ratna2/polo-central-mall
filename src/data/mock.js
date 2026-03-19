@@ -1,59 +1,67 @@
 // Polo Central Mall - Mock Data
-// React + Vite version using LOCAL IMAGES
-
-// ======================================================
-// IMAGE IMPORTS
-// ======================================================
+// React + Vite version using CLOUDINARY MEDIA
 
 // ======================================================
 // BRAND LOGOS
 // ======================================================
 
-import pantaloonsLogo from "../assets/logos/pantaloons.png";
-import boddessLogo from "../assets/logos/boddess.png";
-import forestLogo from "../assets/logos/forest.png";
-import nykaaLogo from "../assets/logos/nykaa.png";
-import mamaearthLogo from "../assets/logos/mamaearth.png";
-import shoppersstopLogo from "../assets/logos/shoppersstop.png";
-import liquidLogo from "../assets/logos/liquid.png";
+const pantaloonsLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667835/pantaloons_dq6auv.png";
+const boddessLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667828/boddess_okq3ni.png";
+const forestLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667829/forest_kp6hy5.png";
+const nykaaLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667834/nykaa_a7zppv.png";
+const mamaearthLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667832/mamaearth_xnlohr.png";
+const shoppersstopLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667839/shoppersstop_oor0dc.png";
+const liquidLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667831/liquid_dgjo1h.webp";
+const crosswordLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773682142/crossword_hltbzb.png";
 
 // ======================================================
 // BRAND HEADER VIDEOS
 // ======================================================
 
-import pantaloonsVideo from "../assets/videos/pantaloons.mp4";
-import boddessVideo from "../assets/videos/boddess.mp4";
-import forestVideo from "../assets/videos/forest.mp4";
-import nykaaVideo from "../assets/videos/nykaa.mp4";
-import mamaearthVideo from "../assets/videos/mamaearth.mp4";
-import shoppersstopVideo from "../assets/videos/shoppersstop.mp4";
-import liquidVideo from "../assets/videos/liquid.mp4";
+const pantaloonsVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667797/pantaloons_uxp1jb.mp4";
+const boddessVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667791/boddess_vs8bxi.mp4";
+const forestVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667791/forest_pwhoqd.mp4";
+const nykaaVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667794/nykaa_kctnie.mp4";
+const mamaearthVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667797/mamaearth_f25ffk.mp4";
+const shoppersstopVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667799/shoppersstop_oym9c5.mp4";
+const liquidVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667794/liquid_bd74v8.mp4";
+const crosswordVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773679785/dining_eht0pj.mp4";
 
+// ======================================================
+// HERO IMAGES
+// ======================================================
 
-// HERO
-import hero1 from "../assets/images/hero/hero1.webp";
-import hero2 from "../assets/images/hero/hero2.webp";
-import hero3 from "../assets/images/hero/hero3.webp";
+const hero1 = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667994/hero1_rqdafj.webp";
+const hero2 = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667996/hero2_ifmep7.webp";
+const hero3 = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667998/hero3_bwockl.webp";
 
+// ======================================================
 // BRANDS
-import pantaloons from "../assets/images/brands/pantaloons.webp";
-import boddess from "../assets/images/brands/boddess.webp";
-import shoppersStop from "../assets/images/brands/shoppers-stop.webp";
-import mamaearth from "../assets/images/brands/mamaearth.webp";
-import nykaa from "../assets/images/brands/nykaa.webp";
-import forestEssentials from "../assets/images/brands/forest-essentials.webp";
-import liquidPerfume from "../assets/images/brands/liquid-perfume.webp";
+// ======================================================
 
+const pantaloons = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667975/pantaloons_x8qccl.webp";
+const boddess = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667958/boddess_cdnocb.webp";
+const shoppersStop = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667977/shoppers-stop_uhyj6o.webp";
+const mamaearth = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667971/mamaearth_z5uyqk.webp";
+const nykaa = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667973/nykaa_r3u41t.webp";
+const forestEssentials = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667967/forest-essentials_ywfzdt.webp";
+const liquidPerfume = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667969/liquid-perfume_oco1gm.webp";
+
+// ======================================================
 // ENTERTAINMENT
-import cinemaImg from "../assets/images/entertainment/cinema.webp";
-import timezoneImg from "../assets/images/entertainment/timezone.webp";
-import kidsImg from "../assets/images/entertainment/kids.webp";
+// ======================================================
 
+const cinemaImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667915/cinema_tdqco6.webp";
+const timezoneImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667920/timezone_qefeue.webp";
+const kidsImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667918/kids_fe10nl.webp";
+
+// ======================================================
 // DINING
-import radhakrishnaImg from "../assets/images/dining/radha-krishna.webp";
-import yellowCab from "../assets/images/dining/yellowcab.webp";
-import crosswordImg from "../assets/images/dining/crossword.webp";
-import { Video } from "lucide-react";
+// ======================================================
+
+const radhakrishnaImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667937/radha-krishna_ajwd3z.webp";
+const yellowCab = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667940/yellowcab_tiiecj.webp";
+const crosswordImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667935/crossword_ne44hv.webp";
 
 // ======================================================
 // BASIC MALL INFO
@@ -220,14 +228,24 @@ export const entertainment = {
 
 export const dining = {
   crossword: {
+    slug: "crossword",
     title: "Crossword",
+    logo: crosswordLogo,
+    video: crosswordVideo,
     description: "Discover a world of books, stationery and thoughtful gifts. Crossword brings readers and creators together.",
+    floor: "Third Floor",
     image: crosswordImg,
     features: [
       "Bestselling Books",
       "premium Stationery",
       "Gifts & Collectables"
     ],
+    gallery: [
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773681269/4_gvhxql.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773681264/3_drwcz5.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773681260/2_o4prnu.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773681257/1_vdvbup.webp" }
+    ]
   },
 
   yellowCab: {
@@ -286,14 +304,14 @@ export const brandMedia = {
     video: pantaloonsVideo,
     description: "Pantaloons fashion collections and in-store experience.",
     media: [
-      { type: "image", src: "/brands/pantaloons/images/1.webp" },
-      { type: "image", src: "/brands/pantaloons/images/2.webp" },
-      { type: "image", src: "/brands/pantaloons/images/3.webp" },
-      { type: "image", src: "/brands/pantaloons/images/4.webp" },
-      { type: "image", src: "/brands/pantaloons/images/5.webp" },
-      { type: "image", src: "/brands/pantaloons/images/6.webp" },
-      { type: "image", src: "/brands/pantaloons/images/7.webp" },
-      { type: "image", src: "/brands/pantaloons/images/8.webp" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671026/1_hps1cl.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671027/2_fmr2n6.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671035/4_w6j0h4.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671031/3_bfsakt.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671039/5_vtxpvw.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671043/6_ikp06s.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671252/7_nygdxq.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671255/8_v0dxkr.webp" }
     ]
   },
 
@@ -358,14 +376,14 @@ export const brandMedia = {
     video: nykaaVideo,
     description: "Premium beauty and cosmetics store.",
     media: [
-      { type: "image", src: "/brands/naykaa/images/1.webp" },
-      { type: "image", src: "/brands/naykaa/images/2.webp" },
-      { type: "image", src: "/brands/naykaa/images/3.webp" },
-      { type: "image", src: "/brands/naykaa/images/4.webp" },
-      { type: "image", src: "/brands/naykaa/images/5.webp" },
-      { type: "image", src: "/brands/naykaa/images/6.webp" },
-      { type: "image", src: "/brands/naykaa/images/7.webp" },
-      { type: "image", src: "/brands/naykaa/images/8.webp" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667742/1_upmxnz.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667743/2_vhfi2c.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667744/3_vjall8.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667743/4_xuyip6.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667745/5_adz4jj.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667747/6_gktxcm.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667748/7_d0dszx.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667750/8_dt4jzj.webp" }
     ]
   },
 
