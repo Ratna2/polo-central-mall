@@ -1,9 +1,12 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useRef } from "react";
 import { brandMedia } from "../data/mock";
-import BrandGallery from "../components/BrandGallery";
-import BrandIntroAnimation from "../components/BrandIntroAnimation";
-import "../styles/brandPage.css";
+
+import DiningEntryAnimation from "../components/DiningEntryAnimation";
+import DiningHeader from "../components/DiningHeader";
+import DiningContent from "../components/DiningContent";
+import DiningGallery from "../components/DiningGallery";
+
+import "../styles/diningBrandPage.css"; // ✅ USE SAME CSS AS DINING
 
 const BrandPage = () => {
 
@@ -12,25 +15,6 @@ const BrandPage = () => {
   const brandKey = brand?.toLowerCase().replace(/\s+/g, "");
 
   const data = brandMedia[brandKey];
-
-  const videoRef = useRef(null);
-
-  useEffect(() => {
-    document.body.style.overflow = "hidden";
-
-    const timer = setTimeout(() => {
-      document.body.style.overflow = "auto";
-    }, 1600);
-
-    return () => {
-      document.body.style.overflow = "auto";
-
-      // pause video when leaving page
-      if (videoRef.current) {
-        videoRef.current.pause();
-      }
-    };
-  }, []);
 
   if (!data) {
     return (
@@ -41,48 +25,28 @@ const BrandPage = () => {
   }
 
   return (
-    <>
-      <BrandIntroAnimation logo={data.logo} />
+    <div className="dining-brand-page">
 
-      <div className="brand-page">
+      {/* ================= ENTRY ANIMATION ================= */}
+      <DiningEntryAnimation logo={data.logo} />
 
-        {/* HEADER WITH VIDEO BACKGROUND */}
-        <section className="brand-header">
+      {/* ================= HEADER ================= */}
+      <DiningHeader
+        video={data.video}
+        logo={data.logo}
+      />
 
-          {/* Background Video */}
-          {data.video && (
-            <video
-              ref={videoRef}
-              className="brand-header-video"
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="none"
-            >
-              <source src={data.video} type="video/mp4" />
-            </video>
-          )}
+      {/* ================= CONTENT ================= */}
+      <DiningContent
+        description={data.description}
+        features={data.features || []}   // ✅ FIXED
+        floor={data.floor || ""}         // ✅ FIXED
+      />
 
-          {/* Overlay for readability */}
-          <div className="brand-header-overlay"></div>
+      {/* ================= GALLERY ================= */}
+      <DiningGallery images={data.media || []} />  {/* ✅ SAFETY */}
 
-          {/* Logo */}
-          <img
-            src={data.logo}
-            alt={data.name}
-            className="brand-header-logo"
-          />
-
-        </section>
-
-        {/* BLACK MEDIA SECTION */}
-        <section className="brand-media">
-          <BrandGallery media={data.media} />
-        </section>
-
-      </div>
-    </>
+    </div>
   );
 };
 

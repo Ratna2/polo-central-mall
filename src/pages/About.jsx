@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Check, MapPin, Building2, Sparkles } from "lucide-react";
 import { aboutContent, mallInfo, heroImages } from "../data/mock";
 import "../styles/about.css";
@@ -91,7 +92,9 @@ const About = () => {
 
       {/* CTA */}
       <div className="foodcourt-cta">
-        <button>Explore All Brands</button>
+        <Link to="/all-brands">
+          <button>Explore All Brands</button>
+        </Link>
       </div>
 
     </main>

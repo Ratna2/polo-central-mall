@@ -2,12 +2,14 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";   // added footer import
+import Footer from "./components/Footer";
 
 import Home from "./pages/Home";
 import About from "./pages/About";
 import BrandPage from "./pages/BrandPage";
 import DiningBrandPage from "./pages/DiningBrandPage";
+import FoodCourtBrandPage from "./pages/FoodCourtBrandPage"; // ✅ NEW
+import AllBrandsPage from "./pages/AllBrandsPage"; // ✅ NEW
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -25,6 +27,7 @@ function App() {
 
         {/* Page Routes */}
         <Routes>
+
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
 
@@ -33,6 +36,13 @@ function App() {
 
           {/* Dining Pages */}
           <Route path="/dining/:slug" element={<DiningBrandPage />} />
+
+          {/* ✅ FoodCourt Pages */}
+          <Route path="/foodcourt/:slug" element={<FoodCourtBrandPage />} />
+
+          {/* ✅ ALL BRANDS PAGE (NEW) */}
+          <Route path="/all-brands" element={<AllBrandsPage />} />
+
         </Routes>
 
         {/* Global Footer */}

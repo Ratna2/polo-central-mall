@@ -6,16 +6,19 @@
 // ======================================================
 
 const pantaloonsLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667835/pantaloons_dq6auv.png";
-const boddessLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667828/boddess_okq3ni.png";
+const boddessLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774294826/boddessb_iayj3m.png";
 const forestLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667829/forest_kp6hy5.png";
 const nykaaLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667834/nykaa_a7zppv.png";
 const mamaearthLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667832/mamaearth_xnlohr.png";
-const shoppersstopLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667839/shoppersstop_oor0dc.png";
-const liquidLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667831/liquid_dgjo1h.webp";
+const shoppersstopLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774294828/shoppers_stops_ibq3wg.png";
+const liquidLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774294830/liquids_o1ge3q.png";
 const crosswordLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773682142/crossword_hltbzb.png";
 const yellowcabLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773905558/yellowcab_vgrtia.png";
 const radhakrishnaLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1773905558/radhakirshna_jgcs44.png";
-
+const dominosLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774284331/dominos_mfnnvi.png";
+const pizzahutLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774284331/pizahut_azw7lk.png";
+const subwayLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774284331/subway_klguii.png";
+const kfcLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774284472/KFC_hqifwv.png";
 // ======================================================
 // BRAND HEADER VIDEOS
 // ======================================================
@@ -61,9 +64,18 @@ const kidsImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667918/k
 // DINING
 // ======================================================
 
-const radhakrishnaImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667937/radha-krishna_ajwd3z.webp";
+const radhakrishnaImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1774280318/radhakirshna_ciliu2.webp";
 const yellowCab = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667940/yellowcab_tiiecj.webp";
-const crosswordImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667935/crossword_ne44hv.webp";
+const crosswordImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1774280204/crossword_pcnfpy.webp";
+
+// ======================================================
+// FOODCOURT
+// ======================================================
+
+const dominosImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667889/dominos_hq74go.webp";
+const pizzahutImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667892/pizzahut_kdt9zi.webp";
+const subwayimg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667894/subway_n6edff.webp";
+const kfcImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667890/kfc_qukhsr.webp";
 
 // ======================================================
 // BASIC MALL INFO
@@ -263,7 +275,12 @@ export const dining = {
       "Quick Bites",
       "Relaxed Cafe Ambience"
     ],
-    gallery: []
+    gallery: [
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774282421/4.webp_gv4yoy.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774282422/3.webp_kxq7hd.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774282421/2.webp_tfjdpq.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774282420/1.webp_lmogv1.webp" }
+    ]
   },
 
   radhakrishna: {
@@ -279,8 +296,107 @@ export const dining = {
       "Traditional Designs",
       "Premium Craftsmanship"
     ],
-    gallery: []
+    gallery: [
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774281084/3_wblaav.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774281084/4_kyabni.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774281083/1_cjjqll.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774281083/2_x7lcuq.webp" }
+    ]
   },
+};
+
+
+// ======================================================
+// FOOD COURT
+// ======================================================
+
+export const foodcourt = {
+
+  dominos: {
+    slug: "dominos",
+    title: "Domino's",
+    logo: dominosLogo,
+    video: "", // add later
+    description: "Hot pizzas, cheesy bites and quick meals for everyone.",
+    floor: "Fourth Floor",
+    image: dominosImg,
+    features: [
+      "Pizza",
+      "Garlic Bread",
+      "Quick Delivery"
+    ],
+
+    gallery: [
+      { type: "image", src: "" },
+      { type: "image", src: "" },
+      { type: "image", src: "" },
+      { type: "image", src: "" }
+    ]
+  },
+
+
+  subway: {
+    slug: "subway",
+    title: "Subway",
+    logo: subwayLogo,
+    video: "",
+    description: "Freshly made sandwiches and healthy subs.",
+    floor: "Fourth Floor",
+    image: subwayimg,
+    features: [
+      "Healthy Subs",
+      "Salads",
+      "Custom Meals"
+    ],
+
+    gallery: [
+      { type: "image", src: "" },
+      { type: "image", src: "" }
+    ]
+  },
+
+
+  kfc: {
+    slug: "kfc",
+    title: "KFC",
+    logo: kfcLogo,
+    video: "",
+    description: "World famous fried chicken and crispy combos.",
+    floor: "Fourth Floor",
+    image: kfcImg,
+    features: [
+      "Fried Chicken",
+      "Buckets",
+      "Combos"
+    ],
+
+    gallery: [
+      { type: "image", src: "" },
+      { type: "image", src: "" }
+    ]
+  },
+
+
+  pizzahut: {
+    slug: "pizzahut",
+    title: "Pizza Hut",
+    logo: pizzahutLogo,
+    video: "",
+    description: "Classic pizzas with rich toppings and cheesy crust.",
+    floor: "Fourth Floor",
+    image: pizzahutImg,
+    features: [
+      "Pan Pizza",
+      "Cheese Burst",
+      "Sides"
+    ],
+
+    gallery: [
+      { type: "image", src: "" },
+      { type: "image", src: "" }
+    ]
+  }
+
 };
 
 
@@ -314,7 +430,13 @@ export const brandMedia = {
     name: "Pantaloons",
     logo: pantaloonsLogo,
     video: pantaloonsVideo,
-    description: "Pantaloons fashion collections and in-store experience.",
+    description: "Pantaloons offers contemporary fashion for modern individuals with trendy collections for men and women.",
+    floor: "Ground Floor",
+    features: [
+      "Men Wear",
+      "Women Wear",
+      "Trendy Fashion"
+    ],
     media: [
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671026/1_hps1cl.webp" },
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671027/2_fmr2n6.webp" },
@@ -332,7 +454,13 @@ export const brandMedia = {
     name: "Boddess Beauty",
     logo: boddessLogo,
     video: boddessVideo,
-    description: "Luxury beauty and cosmetics collections.",
+    description: "Boddess Beauty offers premium cosmetics and skincare products from global luxury brands.",
+    floor: "Ground Floor",
+    features: [
+      "Luxury Cosmetics",
+      "Skincare Products",
+      "Global Brands"
+    ],
     media: [
       { type: "image", src: "/brands/boddessbeauty/images/1.webp" },
       { type: "image", src: "/brands/boddessbeauty/images/2.webp" },
@@ -350,7 +478,13 @@ export const brandMedia = {
     name: "Forest Essentials",
     logo: forestLogo,
     video: forestVideo,
-    description: "Ayurvedic skincare and wellness products.",
+    description: "Forest Essentials brings authentic Ayurvedic skincare and wellness products made from natural ingredients.",
+    floor: "Ground Floor",
+    features: [
+      "Ayurvedic Products",
+      "Natural Ingredients",
+      "Luxury Skincare"
+    ],
     media: [
       { type: "image", src: "/brands/forestessentials/images/1.webp" },
       { type: "image", src: "/brands/forestessentials/images/2.webp" },
@@ -368,7 +502,13 @@ export const brandMedia = {
     name: "Mamaearth",
     logo: mamaearthLogo,
     video: mamaearthVideo,
-    description: "Natural toxin-free beauty products.",
+    description: "Mamaearth offers toxin-free and natural skincare and beauty products for modern lifestyles.",
+    floor: "Ground Floor",
+    features: [
+      "Natural Products",
+      "Toxin-Free",
+      "Eco-Friendly"
+    ],
     media: [
       { type: "image", src: "/brands/mamaearth/images/1.webp" },
       { type: "image", src: "/brands/mamaearth/images/2.webp" },
@@ -386,7 +526,13 @@ export const brandMedia = {
     name: "Nykaa",
     logo: nykaaLogo,
     video: nykaaVideo,
-    description: "Premium beauty and cosmetics store.",
+    description: "Nykaa is India's leading beauty destination offering premium cosmetics and personal care products.",
+    floor: "Ground Floor",
+    features: [
+      "Makeup",
+      "Skincare",
+      "Beauty Products"
+    ],
     media: [
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667742/1_upmxnz.webp" },
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667743/2_vhfi2c.webp" },
@@ -404,7 +550,13 @@ export const brandMedia = {
     name: "Shoppers Stop",
     logo: shoppersstopLogo,
     video: shoppersstopVideo,
-    description: "India's premium fashion department store.",
+    description: "Shoppers Stop is a premium department store offering fashion, beauty and lifestyle products.",
+    floor: "Ground & Upper Floors",
+    features: [
+      "Fashion Brands",
+      "Accessories",
+      "Lifestyle Products"
+    ],
     media: [
       { type: "image", src: "/brands/shoppersstop/images/1.webp" },
       { type: "image", src: "/brands/shoppersstop/images/2.webp" },
@@ -422,7 +574,13 @@ export const brandMedia = {
     name: "Liquid Perfume",
     logo: liquidLogo,
     video: liquidVideo,
-    description: "India's premium perfume store.",
+    description: "Liquid Perfume offers exclusive fragrances from premium international brands.",
+    floor: "Ground Floor",
+    features: [
+      "Luxury Perfumes",
+      "Fragrance Collections",
+      "Exclusive Brands"
+    ],
     media: [
       { type: "image", src: "/brands/liquidperfume/images/1.webp" },
       { type: "image", src: "/brands/liquidperfume/images/2.webp" },
@@ -435,3 +593,57 @@ export const brandMedia = {
     ]
   }
 };
+
+
+// ======================================================
+// ALL STORE BRANDS (INSIDE STORES)
+// ======================================================
+
+export const storeBrands = [
+
+  { name: "Levi's", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774289109/levis_xhlqer.png"},
+  { name: "Peter England", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774289103/peterengland_oxeyte.png"},
+  { name: "Van Heusen", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774289105/vanheusen_mvap6m.png"},
+  { name: "Allen Solly", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774289103/allensolly_ar5apr.png"},
+  { name: "Nike", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774289103/nike_ad8oi3.png"},
+  { name: "Adidas", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774289104/adidus_emdotl.png"},
+  { name: "Nykaa", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667834/nykaa_a7zppv.png" },
+  { name: "BBQ Nation", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774291750/bbqnation_ljoqil.png" },
+  { name: "Bata", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774291748/bata_smntca.png" },
+  { name: "KFC", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774284472/KFC_hqifwv.png" },
+  { name: "Domino's", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774284331/dominos_mfnnvi.png" },
+  { name: "Pizza Hut", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774284331/pizahut_azw7lk.png" },
+  { name: "Subway", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774284331/subway_klguii.png" },
+  { name: "Mochi", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774291746/mochi_xcw0st.png" },
+  { name: "Liquid", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774294830/liquids_o1ge3q.png" },
+  { name: "The Man", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774291747/theman_gt0ncp.webp" },
+  { name: "Radha Krishna Jewellery", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1773905558/radhakirshna_jgcs44.png" },
+  { name: "Reliance Retail", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292905/smart_n1frhm.png" },
+  { name: "Woodland", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292904/woodland_f26gm7.png" },
+  { name: "Costa Coffee", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292898/costacoffee_lppyha.png" },
+  { name: "Biba", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292902/biba_swbvba.png" },
+  { name: "Louis Philippe", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292901/lp_wy9mzg.png" },
+  { name: "Boddess", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774294826/boddessb_iayj3m.png" },
+  { name: "Monte Carlo", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292897/monte_carlo_cmq306.png" },
+  { name: "Vero Moda", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292896/vero_moda_sre4cd.png" },
+  { name: "Reliance Smart", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292908/retail_t9uznd.webp" },
+  { name: "Samsonite", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774293226/samsonite-seeklogo_dvbogp.png" },
+  { name: "Pantaloons", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667835/pantaloons_dq6auv.png" },
+  { name: "Burger King", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774293228/burger_king_jgb4ix.png" },
+  { name: "Mamaearth", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667832/mamaearth_xnlohr.png" },
+  { name: "Shoppers Stop", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774294828/shoppers_stops_ibq3wg.png"},
+  { name: "Hamleys", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774295884/Hamleys_jdfaew.png" },
+  { name: "VIP", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774295876/vip_z2qkpy.png" },
+  { name: "The Body Shop", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774295882/The-Body-Shop_waq2vc.png" },
+  { name: "TimeZone", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774295880/timezone_bhbem1.png" },
+  { name: "US Polo Assn", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774295874/us_polo_stwgws.jpg" },
+  { name: "Aurelia", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774295878/aurelia_dktywe.png" },
+  { name: "ColorPlus", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774296801/colorplus_r7gz59.png" },
+  { name: "INOX", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774296799/inox_qhb24e.webp" },
+  { name: "Metro Shoes", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774296799/metro_exrtua.png" },
+  { name: "Raymond", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774297105/Raymond_exngki.png" },
+  { name: "W", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774297103/W_q0dmli.png" },
+  { name: "US Polo Kids", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774297100/uspolo_kids_t7nik2.png" },
+  { name: "Wow Momo", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774297097/wow_momo_noxobx.jpg" }
+
+];

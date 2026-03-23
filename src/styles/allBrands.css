@@ -1,0 +1,64 @@
+/* MAIN WRAPPER */
+.about-brands-page {
+  background: #000;
+  color: white;
+  padding: 100px 6vw;
+}
+
+/* HEADER */
+.about-brands-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-brands-header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.about-brands-header p {
+  color: rgba(255,255,255,.7);
+}
+
+/* GRID */
+.about-brands-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.about-brands-card {
+  background: #111;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+/* IMAGE FIX (VERY IMPORTANT) */
+.about-brands-img {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-brands-img img {
+  max-width: 120px;
+  max-height: 100%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+/* HOVER */
+.about-brands-card:hover {
+  transform: translateY(-6px);
+  background: #1a1a1a;
+}
+
+/* TEXT */
+.about-brands-name {
+  font-size: 0.95rem;
+}
