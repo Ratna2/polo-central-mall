@@ -19,6 +19,11 @@ const dominosLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v17742843
 const pizzahutLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774284331/pizahut_azw7lk.png";
 const subwayLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774284331/subway_klguii.png";
 const kfcLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774284472/KFC_hqifwv.png";
+const timezoneLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774295880/timezone_bhbem1.png";
+const scaryLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774303160/scary_house_o0ilzu.png";
+const kidszoneLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774303333/kidszone_ybd3ia.png";
+
+
 // ======================================================
 // BRAND HEADER VIDEOS
 // ======================================================
@@ -59,6 +64,7 @@ const liquidPerfume = "https://res.cloudinary.com/deolohqwq/image/upload/v177366
 const cinemaImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667915/cinema_tdqco6.webp";
 const timezoneImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667920/timezone_qefeue.webp";
 const kidsImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667918/kids_fe10nl.webp";
+const scaryImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1774301418/scary_house_d6fven.webp";
 
 // ======================================================
 // DINING
@@ -208,33 +214,66 @@ export const floorInfo = [
 
 
 // ======================================================
-// ENTERTAINMENT
+// ENTERTAINMENT - FEATURED (SPECIAL / DIFFERENT)
 // ======================================================
 
-export const entertainment = {
+export const entertainmentFeatured = {
 
   cinema: {
+    slug: "inox",
     title: "INOX Cinema (Coming Soon)",
     description: "A premium multiplex cinema is coming soon to Polo Central Mall.",
     features: ["Luxury Screens", "Dolby Atmos", "Premium Seating"],
     image: cinemaImg,
     status: "coming-soon"
-  },
+  }
+
+};
+
+
+// ======================================================
+// ENTERTAINMENT (REGULAR)
+// ======================================================
+
+export const entertainment = {
 
   timeZone: {
+    slug: "timezone",
     title: "Time Zone",
+    logo: timezoneLogo,
+    video: "",
     description: "Ultimate gaming and arcade experience.",
+    floor: "Third Floor",
     features: ["Arcade Games", "VR", "Racing Games"],
     image: timezoneImg,
+    gallery: []
   },
 
   kids: {
+    slug: "kids",
     title: "Kids Entertainment",
+    logo: kidszoneLogo,
+    video: "",
     description: "Play zones and activities for children.",
+    floor: "Third Floor",
+    features: ["Play Area", "Fun Activities", "Fun rides"],
     image: kidsImg,
+    gallery: []
   },
-};
 
+  haunted: {
+    slug: "haunted",
+    title: "Scary House",
+    logo: scaryLogo,
+    video: "",
+    description: "Thrilling horror experience.",
+    floor: "Third Floor",
+    features: ["Dark Ride", "Scary Effects"],
+    image: scaryImg,
+    gallery: []
+  }
+
+};
 
 // ======================================================
 // DINING

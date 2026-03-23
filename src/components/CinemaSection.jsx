@@ -1,8 +1,11 @@
 import { Film, Volume2, Armchair, Star, Clock } from "lucide-react";
-import { entertainment } from "../data/mock";
+import { entertainmentFeatured } from "../data/mock"; // ✅ FIXED
 import "../styles/cinema.css";
 
 const CinemaSection = () => {
+
+  const cinema = entertainmentFeatured.cinema; // ✅ FIXED
+
   const icons = [Film, Volume2, Armchair, Star];
 
   const comingSoonFeatures = [
@@ -19,7 +22,7 @@ const CinemaSection = () => {
       <div className="cinema-bg">
 
         <div className="zone-image">
-          <img src={entertainment.cinema.image} alt="INOX Cinema" />
+          <img src={cinema?.image} alt="INOX Cinema" />
           <div className="zone-overlay"></div>
         </div>
 
@@ -32,10 +35,10 @@ const CinemaSection = () => {
 
           <Film size={56} className="cinema-icon" />
 
-          <h2>{entertainment.cinema.title}</h2>
+          <h2>{cinema?.title}</h2>
 
           <p className="cinema-description">
-            {entertainment.cinema.description}
+            {cinema?.description}
           </p>
 
           {/* COMING SOON FEATURES */}
@@ -51,12 +54,6 @@ const CinemaSection = () => {
             })}
           </div>
 
-          {/* STATUS
-          <div className="cinema-status">
-            <Clock size={18} />
-            <span>INOX Multiplex – Opening Soon</span>
-          </div> */}
-
         </div>
 
         {/* RIGHT IMAGE */}
@@ -64,14 +61,14 @@ const CinemaSection = () => {
 
           <div className="zone-image">
             <img
-              src={entertainment.cinema.image}
+              src={cinema?.image}
               alt="INOX Experience"
             />
 
             <div className="zone-overlay"></div>
 
             {/* OPENING SOON CINEMA BAR */}
-            {entertainment.cinema.status === "coming-soon" && (
+            {cinema?.status === "coming-soon" && (
               <div className="coming-soon-bar">
                 <Clock size={18} className="soon-icon" />
                 <span className="soon-text">
@@ -88,7 +85,7 @@ const CinemaSection = () => {
             <p>Coming Soon to Polo Central Mall</p>
           </div>
 
-          {/* BADGE (hidden via CSS) */}
+          {/* BADGE */}
           <div className="cinema-badge">
             Coming Soon
           </div>

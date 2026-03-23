@@ -1,5 +1,6 @@
-import { Gamepad2, Baby, Train, Sparkles } from "lucide-react";
+import { Gamepad2, Baby, Ghost, Sparkles } from "lucide-react";
 import { entertainment } from "../data/mock";
+import { Link } from "react-router-dom"; // ✅ ADDED
 import "../styles/entertainment.css";
 
 const EntertainmentZone = () => {
@@ -14,8 +15,8 @@ const EntertainmentZone = () => {
       icon: Baby,
     },
     {
-      ...entertainment.cinema,
-      icon: Train,
+      ...entertainment.haunted,
+      icon: Ghost,
     },
   ];
 
@@ -41,25 +42,34 @@ const EntertainmentZone = () => {
             const Icon = zone.icon;
 
             return (
-              <div className="entertainment-card" key={index}>
+              <Link
+                to={`/entertainment/${zone.slug}`} // ✅ ADDED
+                className="entertainment-card-premium"
+                key={index}
+              >
 
-                <div className="zone-image">
-                  <img src={zone.image} alt={zone.title} />
-                  <div className="zone-overlay"></div>
+                <div className="entertainment-media">
+                  <img
+                    src={zone.image}
+                    alt={zone.title}
+                    loading="lazy"
+                  />
+
+                  <div className="entertainment-overlay"></div>
 
                   {/* Overlay Content */}
-                  <div className="zone-content overlay-content">
+                  <div className="entertainment-content">
 
-                    <Icon size={38} className="zone-icon" />
+                    <Icon size={38} className="entertainment-icon" />
 
                     <h3>{zone.title}</h3>
 
                     <p>{zone.description}</p>
 
-                    <div className="zone-features">
+                    <div className="entertainment-features">
                       {zone.features?.map((feature, idx) => (
-                        <div className="feature-row" key={idx}>
-                          <span className="dot"></span>
+                        <div className="entertainment-feature" key={idx}>
+                          <span className="ent-dot"></span>
                           <span>{feature}</span>
                         </div>
                       ))}
@@ -69,7 +79,7 @@ const EntertainmentZone = () => {
 
                 </div>
 
-              </div>
+              </Link>
             );
           })}
 

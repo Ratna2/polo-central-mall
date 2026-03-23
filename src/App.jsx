@@ -8,8 +8,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import BrandPage from "./pages/BrandPage";
 import DiningBrandPage from "./pages/DiningBrandPage";
-import FoodCourtBrandPage from "./pages/FoodCourtBrandPage"; // ✅ NEW
-import AllBrandsPage from "./pages/AllBrandsPage"; // ✅ NEW
+import FoodCourtBrandPage from "./pages/FoodCourtBrandPage";
+import AllBrandsPage from "./pages/AllBrandsPage"; 
+import EntertainmentBrandPage from "./pages/EntertainmentBrandPage";
 
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -33,6 +34,9 @@ function App() {
 
           {/* Brand Pages */}
           <Route path="/brand/:brand" element={<BrandPage />} />
+
+          {/* Entertainment Zone */}
+          <Route path="/entertainment/:slug" element={<EntertainmentBrandPage />} />
 
           {/* Dining Pages */}
           <Route path="/dining/:slug" element={<DiningBrandPage />} />
