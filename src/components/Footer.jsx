@@ -60,7 +60,7 @@ const Footer = () => {
             <Train size={18} />
 
             <div className="convenience-text">
-              <div className="main">Local Train Station – 45 Minutes</div>
+              <div className="main">Railway Station – 45 Minutes</div>
               <div className="sub">
                 Agartala Railway Station
               </div>
@@ -79,7 +79,7 @@ const Footer = () => {
             <MapPin size={18} />
 
             <span className="address">
-              VIP Road, Agartala Airport Rd, kunjaban, Agartala,<br/>
+              VIP Road, Agartala Airport Rd, Kunjaban, Agartala,<br/>
               Tripura 799006<br/>
             </span>
 
