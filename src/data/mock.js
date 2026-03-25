@@ -22,6 +22,7 @@ const kfcLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774284472/K
 const timezoneLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774295880/timezone_bhbem1.png";
 const scaryLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774303160/scary_house_o0ilzu.png";
 const kidszoneLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774303333/kidszone_ybd3ia.png";
+const themanLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v1774409129/theman_v8mchq.png";
 
 
 // ======================================================
@@ -36,14 +37,15 @@ const mamaearthVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v17736
 const shoppersstopVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667799/shoppersstop_oym9c5.mp4";
 const liquidVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667794/liquid_bd74v8.mp4";
 const crosswordVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773679785/dining_eht0pj.mp4";
+const themanVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667794/liquid_bd74v8.mp4";
 
 // ======================================================
 // HERO IMAGES
 // ======================================================
 
-const hero1 = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667994/hero1_rqdafj.webp";
-const hero2 = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667996/hero2_ifmep7.webp";
-const hero3 = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667998/hero3_bwockl.webp";
+const hero1 = "https://res.cloudinary.com/deolohqwq/image/upload/v1774409718/hero1_boyz9r.webp";
+const hero2 = "https://res.cloudinary.com/deolohqwq/image/upload/v1774409715/hero2_p5tzur.webp";
+const hero3 = "https://res.cloudinary.com/deolohqwq/image/upload/v1774409716/hero3_ibkvae.webp";
 
 // ======================================================
 // BRANDS
@@ -56,13 +58,14 @@ const mamaearth = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667971
 const nykaa = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667973/nykaa_r3u41t.webp";
 const forestEssentials = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667967/forest-essentials_ywfzdt.webp";
 const liquidPerfume = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667969/liquid-perfume_oco1gm.webp";
+const theman = "https://res.cloudinary.com/deolohqwq/image/upload/v1774408834/theman_rsufig.webp";
 
 // ======================================================
 // ENTERTAINMENT
 // ======================================================
 
 const cinemaImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667915/cinema_tdqco6.webp";
-const timezoneImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667920/timezone_qefeue.webp";
+const timezoneImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1774410911/timezone_zs1ubo.webp";
 const kidsImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1773667918/kids_fe10nl.webp";
 const scaryImg = "https://res.cloudinary.com/deolohqwq/image/upload/v1774301418/scary_house_d6fven.webp";
 
@@ -162,6 +165,13 @@ export const fashionBrands = [
     description: "Exclusive fragrance collections.",
     image: liquidPerfume,
   },
+  {
+    name: "The Man Company",
+    slug: "theman",
+    category: "grooming products",
+    description: "Exclusive grooming products.",
+    image: theman,
+  }
 ];
 
 
@@ -246,7 +256,12 @@ export const entertainment = {
     floor: "Third Floor",
     features: ["Arcade Games", "VR", "Racing Games"],
     image: timezoneImg,
-    gallery: []
+    gallery: [
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411018/1t_gsyfxb.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411019/2t_bdpvu6.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411020/3t_s3ctx5.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411021/4t_d6dgcu.webp" }
+    ]
   },
 
   kids: {
@@ -258,7 +273,12 @@ export const entertainment = {
     floor: "Third Floor",
     features: ["Play Area", "Fun Activities", "Fun rides"],
     image: kidsImg,
-    gallery: []
+    gallery: [
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411091/1k_uspawh.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411093/2k_tr5liw.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411096/3k_a09jsn.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411097/4k_e3fuhh.webp" }
+    ]
   },
 
   haunted: {
@@ -268,9 +288,14 @@ export const entertainment = {
     video: "",
     description: "Thrilling horror experience.",
     floor: "Third Floor",
-    features: ["Dark Ride", "Scary Effects"],
+    features: ["Dark Ride", "Scary Effects", "Spooky vibes"],
     image: scaryImg,
-    gallery: []
+    gallery: [
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411158/1h_twfebn.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411160/2h_h2pl7v.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411162/3h_levmfm.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774411164/4h_kvcpgm.webp" }
+    ]
   }
 
 };
@@ -366,10 +391,10 @@ export const foodcourt = {
     ],
 
     gallery: [
-      { type: "image", src: "" },
-      { type: "image", src: "" },
-      { type: "image", src: "" },
-      { type: "image", src: "" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370532/1d_wjssue.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370532/2d_khh465.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370533/3d_ykngso.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370532/4d_uesstq.webp" }
     ]
   },
 
@@ -389,8 +414,10 @@ export const foodcourt = {
     ],
 
     gallery: [
-      { type: "image", src: "" },
-      { type: "image", src: "" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370471/1s_opvh3z.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370471/2s_zcsjko.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370472/3s_izjdng.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370472/4s_onj4un.webp" }
     ]
   },
 
@@ -410,8 +437,10 @@ export const foodcourt = {
     ],
 
     gallery: [
-      { type: "image", src: "" },
-      { type: "image", src: "" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370199/1k_rutjx6.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370199/2k_c3zzlg.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370230/3k_ig1y1n.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370199/4k_chul9o.webp" }
     ]
   },
 
@@ -431,8 +460,10 @@ export const foodcourt = {
     ],
 
     gallery: [
-      { type: "image", src: "" },
-      { type: "image", src: "" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370402/1p_dcptna.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370403/2p_rkk7ew.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370403/3p_ytmapj.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774370403/4p_vdb7y0.webp" }
     ]
   }
 
@@ -478,12 +509,8 @@ export const brandMedia = {
     ],
     media: [
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671026/1_hps1cl.webp" },
-      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671027/2_fmr2n6.webp" },
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671035/4_w6j0h4.webp" },
-      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671031/3_bfsakt.webp" },
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671039/5_vtxpvw.webp" },
-      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671043/6_ikp06s.webp" },
-      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671252/7_nygdxq.webp" },
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773671255/8_v0dxkr.webp" }
     ]
   },
@@ -501,14 +528,10 @@ export const brandMedia = {
       "Global Brands"
     ],
     media: [
-      { type: "image", src: "/brands/boddessbeauty/images/1.webp" },
-      { type: "image", src: "/brands/boddessbeauty/images/2.webp" },
-      { type: "image", src: "/brands/boddessbeauty/images/3.webp" },
-      { type: "image", src: "/brands/boddessbeauty/images/4.webp" },
-      { type: "image", src: "/brands/boddessbeauty/images/5.webp" },
-      { type: "image", src: "/brands/boddessbeauty/images/6.webp" },
-      { type: "image", src: "/brands/boddessbeauty/images/7.webp" },
-      { type: "image", src: "/brands/boddessbeauty/images/8.webp" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774406318/1b_veiw5x.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774406318/2b_k7apic.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774406318/3b_dv3rzy.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774406318/4b_s7tox9.webp" }
     ]
   },
 
@@ -525,14 +548,10 @@ export const brandMedia = {
       "Luxury Skincare"
     ],
     media: [
-      { type: "image", src: "/brands/forestessentials/images/1.webp" },
-      { type: "image", src: "/brands/forestessentials/images/2.webp" },
-      { type: "image", src: "/brands/forestessentials/images/3.webp" },
-      { type: "image", src: "/brands/forestessentials/images/4.webp" },
-      { type: "image", src: "/brands/forestessentials/images/5.webp" },
-      { type: "image", src: "/brands/forestessentials/images/6.webp" },
-      { type: "image", src: "/brands/forestessentials/images/7.webp" },
-      { type: "image", src: "/brands/forestessentials/images/8.webp" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774406408/1f_l0exbi.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774406419/2f_ippqb5.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774406428/3f_lpiyac.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774406428/4f_wir9bh.webp" }
     ]
   },
 
@@ -549,14 +568,10 @@ export const brandMedia = {
       "Eco-Friendly"
     ],
     media: [
-      { type: "image", src: "/brands/mamaearth/images/1.webp" },
-      { type: "image", src: "/brands/mamaearth/images/2.webp" },
-      { type: "image", src: "/brands/mamaearth/images/3.webp" },
-      { type: "image", src: "/brands/mamaearth/images/4.webp" },
-      { type: "image", src: "/brands/mamaearth/images/5.webp" },
-      { type: "image", src: "/brands/mamaearth/images/6.webp" },
-      { type: "image", src: "/brands/mamaearth/images/7.webp" },
-      { type: "image", src: "/brands/mamaearth/images/8.webp" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774407371/1ma_phkuue.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774407371/2ma_y9atvs.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774407372/3ma_bneucn.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774407373/4ma_go4kxm.webp" }
     ]
   },
 
@@ -575,12 +590,8 @@ export const brandMedia = {
     media: [
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667742/1_upmxnz.webp" },
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667743/2_vhfi2c.webp" },
-      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667744/3_vjall8.webp" },
       { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667743/4_xuyip6.webp" },
-      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667745/5_adz4jj.webp" },
-      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667747/6_gktxcm.webp" },
-      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667748/7_d0dszx.webp" },
-      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667750/8_dt4jzj.webp" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1773667748/7_d0dszx.webp" }
     ]
   },
 
@@ -597,14 +608,10 @@ export const brandMedia = {
       "Lifestyle Products"
     ],
     media: [
-      { type: "image", src: "/brands/shoppersstop/images/1.webp" },
-      { type: "image", src: "/brands/shoppersstop/images/2.webp" },
-      { type: "image", src: "/brands/shoppersstop/images/3.webp" },
-      { type: "image", src: "/brands/shoppersstop/images/4.webp" },
-      { type: "image", src: "/brands/shoppersstop/images/5.webp" },
-      { type: "image", src: "/brands/shoppersstop/images/6.webp" },
-      { type: "image", src: "/brands/shoppersstop/images/7.webp" },
-      { type: "image", src: "/brands/shoppersstop/images/8.webp" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408237/1s_melznj.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408237/2s_io4pje.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408237/3s_s9padp.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408238/4s_zncq22.webp" }
     ]
   },
 
@@ -621,14 +628,30 @@ export const brandMedia = {
       "Exclusive Brands"
     ],
     media: [
-      { type: "image", src: "/brands/liquidperfume/images/1.webp" },
-      { type: "image", src: "/brands/liquidperfume/images/2.webp" },
-      { type: "image", src: "/brands/liquidperfume/images/3.webp" },
-      { type: "image", src: "/brands/liquidperfume/images/4.webp" },
-      { type: "image", src: "/brands/liquidperfume/images/5.webp" },
-      { type: "image", src: "/brands/liquidperfume/images/6.webp" },
-      { type: "image", src: "/brands/liquidperfume/images/7.webp" },
-      { type: "image", src: "/brands/liquidperfume/images/8.webp" }
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408351/1l_xk0sqb.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408351/2l_bybbg7.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408352/3l_ugkhi0.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408353/4l_joeu6l.webp" }
+    ]
+  },
+
+  theman: {
+    slug: "theman",
+    name: "The Man Company",
+    logo: themanLogo,
+    video: themanVideo,
+    description: "Liquid Perfume offers exclusive fragrances from premium international brands.",
+    floor: "Ground Floor",
+    features: [
+      "Luxury Perfumes",
+      "Fragrance Collections",
+      "Exclusive Brands"
+    ],
+    media: [
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408517/1m_kgkian.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408517/2m_ihv6cs.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408519/3m_g6kow1.webp" },
+      { type: "image", src: "https://res.cloudinary.com/deolohqwq/image/upload/v1774408520/4m_snmxdq.webp" }
     ]
   }
 };
@@ -655,7 +678,7 @@ export const storeBrands = [
   { name: "Subway", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774284331/subway_klguii.png" },
   { name: "Mochi", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774291746/mochi_xcw0st.png" },
   { name: "Liquid", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774294830/liquids_o1ge3q.png" },
-  { name: "The Man", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774291747/theman_gt0ncp.webp" },
+  { name: "The Man", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774409129/theman_v8mchq.png" },
   { name: "Radha Krishna Jewellery", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1773905558/radhakirshna_jgcs44.png" },
   { name: "Reliance Retail", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292905/smart_n1frhm.png" },
   { name: "Woodland", logo: "https://res.cloudinary.com/deolohqwq/image/upload/v1774292904/woodland_f26gm7.png" },
