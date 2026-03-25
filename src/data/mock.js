@@ -29,15 +29,8 @@ const themanLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v177440912
 // BRAND HEADER VIDEOS
 // ======================================================
 
-const pantaloonsVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667797/pantaloons_uxp1jb.mp4";
-const boddessVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667791/boddess_vs8bxi.mp4";
-const forestVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667791/forest_pwhoqd.mp4";
-const nykaaVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667794/nykaa_kctnie.mp4";
-const mamaearthVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667797/mamaearth_f25ffk.mp4";
-const shoppersstopVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667799/shoppersstop_oym9c5.mp4";
-const liquidVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667794/liquid_bd74v8.mp4";
-const crosswordVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773679785/dining_eht0pj.mp4";
-const themanVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1773667794/liquid_bd74v8.mp4";
+const shoppingVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774425550/shoping_cti4rn.mp4";
+const diningVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774425184/diningvideo_yuqeng.mp4";
 
 // ======================================================
 // HERO IMAGES
@@ -309,7 +302,7 @@ export const dining = {
     slug: "crossword",
     title: "Crossword",
     logo: crosswordLogo,
-    video: crosswordVideo,
+    video: diningVideo,
     description: "Discover a world of books, stationery and thoughtful gifts. Crossword brings readers and creators together.",
     floor: "Third Floor",
     image: crosswordImg,
@@ -330,7 +323,7 @@ export const dining = {
     slug: "yellowcab",
     title: "Yellow Cab Cafe ",
     logo: yellowcabLogo,
-    video: crosswordVideo,
+    video: diningVideo,
     description: "A cozy cafe experience to relax, recharge and enjoy great coffee.",
     floor: "Ground Floor",
     image: yellowCab,
@@ -351,7 +344,7 @@ export const dining = {
     slug: "radhakrishna",
     title: "Radha Krishna Jewellery",
     logo: radhakrishnaLogo,
-    video: crosswordVideo,
+    video: diningVideo,
     description: "Explore eligent jewellery collections crafted with timeless beauty and traditional artistry.",
     floor: "First Floor",
     image: radhakrishnaImg,
@@ -499,7 +492,7 @@ export const brandMedia = {
     slug: "pantaloons",
     name: "Pantaloons",
     logo: pantaloonsLogo,
-    video: pantaloonsVideo,
+    video: shoppingVideo,
     description: "Pantaloons offers contemporary fashion for modern individuals with trendy collections for men and women.",
     floor: "Ground Floor",
     features: [
@@ -519,7 +512,7 @@ export const brandMedia = {
     slug: "boddess",
     name: "Boddess Beauty",
     logo: boddessLogo,
-    video: boddessVideo,
+    video: shoppingVideo,
     description: "Boddess Beauty offers premium cosmetics and skincare products from global luxury brands.",
     floor: "Ground Floor",
     features: [
@@ -539,7 +532,7 @@ export const brandMedia = {
     slug: "forest",
     name: "Forest Essentials",
     logo: forestLogo,
-    video: forestVideo,
+    video: shoppingVideo,
     description: "Forest Essentials brings authentic Ayurvedic skincare and wellness products made from natural ingredients.",
     floor: "Ground Floor",
     features: [
@@ -559,7 +552,7 @@ export const brandMedia = {
     slug: "mamaearth",
     name: "Mamaearth",
     logo: mamaearthLogo,
-    video: mamaearthVideo,
+    video: shoppingVideo,
     description: "Mamaearth offers toxin-free and natural skincare and beauty products for modern lifestyles.",
     floor: "Ground Floor",
     features: [
@@ -579,7 +572,7 @@ export const brandMedia = {
     slug: "nykaa",
     name: "Nykaa",
     logo: nykaaLogo,
-    video: nykaaVideo,
+    video: shoppingVideo,
     description: "Nykaa is India's leading beauty destination offering premium cosmetics and personal care products.",
     floor: "Ground Floor",
     features: [
@@ -599,7 +592,7 @@ export const brandMedia = {
     slug: "shoppersstop",
     name: "Shoppers Stop",
     logo: shoppersstopLogo,
-    video: shoppersstopVideo,
+    video: shoppingVideo,
     description: "Shoppers Stop is a premium department store offering fashion, beauty and lifestyle products.",
     floor: "Ground & Upper Floors",
     features: [
@@ -619,7 +612,7 @@ export const brandMedia = {
     slug: "liquid",
     name: "Liquid Perfume",
     logo: liquidLogo,
-    video: liquidVideo,
+    video: shoppingVideo,
     description: "Liquid Perfume offers exclusive fragrances from premium international brands.",
     floor: "Ground Floor",
     features: [
@@ -639,7 +632,7 @@ export const brandMedia = {
     slug: "theman",
     name: "The Man Company",
     logo: themanLogo,
-    video: themanVideo,
+    video: shoppingVideo,
     description: "Liquid Perfume offers exclusive fragrances from premium international brands.",
     floor: "Ground Floor",
     features: [
