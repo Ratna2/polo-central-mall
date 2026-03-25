@@ -43,8 +43,8 @@ const themanVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v17736677
 // HERO IMAGES
 // ======================================================
 
-const hero1 = "https://res.cloudinary.com/deolohqwq/image/upload/v1774409718/hero1_boyz9r.webp";
-const hero2 = "https://res.cloudinary.com/deolohqwq/image/upload/v1774409715/hero2_p5tzur.webp";
+const hero1 = "https://res.cloudinary.com/deolohqwq/image/upload/v1774409715/hero2_p5tzur.webp";
+const hero2 = "https://res.cloudinary.com/deolohqwq/image/upload/v1774409718/hero1_boyz9r.webp";
 const hero3 = "https://res.cloudinary.com/deolohqwq/image/upload/v1774409716/hero3_ibkvae.webp";
 
 // ======================================================
