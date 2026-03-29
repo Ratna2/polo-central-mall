@@ -29,7 +29,7 @@ const themanLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v177440912
 // BRAND HEADER VIDEOS
 // ======================================================
 
-const shoppingVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774425550/shoping_cti4rn.mp4";
+const shoppingVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774768945/SHOPI_nktipj.mp4";
 const diningVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774425184/diningvideo_yuqeng.mp4";
 const entertainmentVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774554224/kids_j36ebq.mp4";
 const foodcourtVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774553957/foodcourt_yieta4.mp4";
