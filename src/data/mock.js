@@ -31,6 +31,8 @@ const themanLogo = "https://res.cloudinary.com/deolohqwq/image/upload/v177440912
 
 const shoppingVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774425550/shoping_cti4rn.mp4";
 const diningVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774425184/diningvideo_yuqeng.mp4";
+const entertainmentVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774554224/kids_j36ebq.mp4";
+const foodcourtVideo = "https://res.cloudinary.com/deolohqwq/video/upload/v1774553957/foodcourt_yieta4.mp4";
 
 // ======================================================
 // HERO IMAGES
@@ -244,7 +246,7 @@ export const entertainment = {
     slug: "timezone",
     title: "Time Zone",
     logo: timezoneLogo,
-    video: "",
+    video: entertainmentVideo,
     description: "Ultimate gaming and arcade experience.",
     floor: "Third Floor",
     features: ["Arcade Games", "VR", "Racing Games"],
@@ -261,7 +263,7 @@ export const entertainment = {
     slug: "kids",
     title: "Kids Entertainment",
     logo: kidszoneLogo,
-    video: "",
+    video: entertainmentVideo,
     description: "Play zones and activities for children.",
     floor: "Third Floor",
     features: ["Play Area", "Fun Activities", "Fun rides"],
@@ -278,7 +280,7 @@ export const entertainment = {
     slug: "haunted",
     title: "Scary House",
     logo: scaryLogo,
-    video: "",
+    video: entertainmentVideo,
     description: "Thrilling horror experience.",
     floor: "Third Floor",
     features: ["Dark Ride", "Scary Effects", "Spooky vibes"],
@@ -373,7 +375,7 @@ export const foodcourt = {
     slug: "dominos",
     title: "Domino's",
     logo: dominosLogo,
-    video: "", // add later
+    video: foodcourtVideo,
     description: "Hot pizzas, cheesy bites and quick meals for everyone.",
     floor: "Fourth Floor",
     image: dominosImg,
@@ -396,7 +398,7 @@ export const foodcourt = {
     slug: "subway",
     title: "Subway",
     logo: subwayLogo,
-    video: "",
+    video: foodcourtVideo,
     description: "Freshly made sandwiches and healthy subs.",
     floor: "Fourth Floor",
     image: subwayimg,
@@ -419,7 +421,7 @@ export const foodcourt = {
     slug: "kfc",
     title: "KFC",
     logo: kfcLogo,
-    video: "",
+    video: foodcourtVideo,
     description: "World famous fried chicken and crispy combos.",
     floor: "Fourth Floor",
     image: kfcImg,
@@ -442,7 +444,7 @@ export const foodcourt = {
     slug: "pizzahut",
     title: "Pizza Hut",
     logo: pizzahutLogo,
-    video: "",
+    video: foodcourtVideo,
     description: "Classic pizzas with rich toppings and cheesy crust.",
     floor: "Fourth Floor",
     image: pizzahutImg,
